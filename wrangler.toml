@@ -1,0 +1,13 @@
+name = "material-new-tab"
+main = "build/index.js" # Simplified for static assets if using Workers Sites or Pages
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./dist"
+entry-point = "workers-site"
+
+# Usage:
+# 1. npm run build
+# 2. npx wrangler pages deploy dist (Recommended for frontend only)
+# OR for Workers Sites:
+# 2. npx wrangler deploy
